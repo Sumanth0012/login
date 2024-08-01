@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("background_image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.logo,
+.about,
+.content,
+.terms {
+  margin: 0.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logo {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.8rem;
+}
+img {
+  padding-right: 1.5rem;
+}
+.about {
+  display: inline-block;
+  color: white;
+  width: 40%;
+}
+.content {
+  display: inline-flex;
+  flex-direction: column;
+  height: 55%;
+  width: 25%;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  overflow: auto;
+}
+
+.inside_content {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.inp {
+  height: 5.5vh;
+  margin: 5px;
+  width: 100%;
+}
+
+.check {
+  margin: 5px 5px 20px 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.login_btn {
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(15, 109, 233);
+  color: white;
+}
+
+.lang_btn {
+  margin-left: auto;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.lang {
+  display: none;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.terms {
+  color: white;
+}
+
+select {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+input:focus {
+  background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media print {
+  body {
+    background-color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    background-color: gray;
+  }
+}

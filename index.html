@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      .para {
+        color: wheat;
+        position: relative;
+        background-color: black;
+        top: 20px;
+        left: 30px;
+        height: 45dvh;
+        width: 60dvw;
+        display: inline-block;
+      }
+      .para1,
+      .para2,
+      .para3 {
+        width: 33.33%;
+        height: 33.33%;
+        position: relative;
+        float: left;
+        overflow: scroll;
+        box-sizing: border-box;
+      }
+      .para1 {
+        background-color: red;
+      }
+      .para2 {
+        background-color: green;
+      }
+      .para3 {
+        background-color: blue;
+      }
+      ul {
+        list-style-type: none;
+        background-color: rgb(66, 66, 66);
+        overflow: hidden;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+      }
+      li:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a>one</a></li>
+      <li><a>two</a></li>
+      <li><a>three</a></li>
+      <li><a>four</a></li>
+      <li><a>five</a></li>
+    </ul>
+    <div class="para">
+      <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+        asperiores, fuga laboriosam doloribus maxime eligendi dicta voluptatem
+        distinctio vel! Non quae placeat labore ducimus quisquam autem illum vel
+        perspiciatis id?
+      </p>
+      <p class="para2">
+        With an external style sheet, you can change the look of an entire
+        website by changing just one file! Each HTML page must include a
+        reference to the external style sheet file inside the element, inside
+        the head section.
+      </p>
+      <p class="para3">
+        An external style sheet can be written in any text editor, and must be
+        saved with a .css extension. The external .css file should not contain
+        any HTML tags. Here is how the "mystyle.css" file looks:
+      </p>
+    </div>
+  </body>
+</html>
