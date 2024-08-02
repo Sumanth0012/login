@@ -4,9 +4,7 @@
 }
 body {
   background-image: url("background_image.jpeg");
-  background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   justify-content: center;
   align-content: center;
@@ -44,13 +42,23 @@ img {
   text-align: center;
   align-content: center;
   overflow: auto;
+  transition: width 1s;
 }
 
 .inside_content {
-  margin: 2rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 90%;
+  width: 80%;
+}
+
+.lang_btn {
+  margin-left: auto;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .inp {
@@ -60,7 +68,7 @@ img {
 }
 
 .check {
-  margin: 5px 5px 20px 5px;
+  margin: 5px 5px 30px 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -72,20 +80,6 @@ img {
   height: 5vh;
   background-color: rgb(15, 109, 233);
   color: white;
-}
-
-.lang_btn {
-  margin-left: auto;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.lang {
-  display: none;
-  flex-direction: column;
-  margin-left: auto;
 }
 
 .terms {
@@ -108,12 +102,13 @@ a {
 
 @media print {
   body {
-    background-color: black;
-  }
-}
-
-@media (max-width: 768px) {
-  .content {
     background-color: gray;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .content{
+    width: 60%
+  }
+}
+
