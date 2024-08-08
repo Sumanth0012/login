@@ -18,6 +18,12 @@
             <li class="nav-item"><a href="#" class="nav-link text-light">Page 1</a></li>
             <li class="nav-item"><a href="#" class="nav-link text-light">Page 2</a></li>
         </ul>
+        <ul class="navbar-nav position-absolute end-0">
+            <li><span class="material-icons text-light">person</span></li>
+            <li><a href="Signup.html" class="text-light mx-1 text-decoration-none">Sign Up</a></li>
+            <li><span class="material-icons text-light ms-3">logout</span></li>
+            <li><a href="Login.html" class="text-light mx-1 text-decoration-none">Logout</a></li>
+        </ul>
     </nav>
     <div class="d-flex">
         <div class="container-fluid w-25 h-75 m-0 bg-light text-center position-relative">
@@ -133,18 +139,54 @@
     <div class="modal-dialog">
       <div class="modal-content">
   
-        <!-- Modal Header -->
+        
         <div class="modal-header">
           <h4 class="modal-title w-100 text-center">Your Details</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
   
-        <!-- Modal body -->
+        
         <div class="modal-body">
-          <iframe src="modal.html" width="100%" height="625"></iframe>
+            <div class="d-flex">
+                <form class="my-4 mx-2">
+                    <div class="w-50">
+                        <label class="form-label" for="Name"><b>Name :</b></label><br>
+                        <input class="form-control form-control-sm border border-dark" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                        <label class="form-label" for="Designition"><b>Designition :</b></label><br>
+                        <input class="form-control form-control-sm border border-dark" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                        <label class="form-label" for="Address"><b>Address :</b></label><br>
+                        <input class="form-control form-control-sm border border-dark" type="text" id="lname" name="lname" placeholder="Address"><br>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-1">
+                            <label class="form-label" for="contnum"><b>Contact N</b>umber :</label><br>
+                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="contnum" name="contnum" placeholder="Contact Number"><br>
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="email"><b>Email :</b></label><br>
+                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="email" id="email" name="email"><br>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-1">
+                            <label class="form-label" for="link"><b>Link :</b></label><br>
+                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="link" name="link" placeholder="Link"><br>
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="language"><b>Contact Number :</b></label><br>
+                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="language" name="language" placeholder="Language"><br>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label" for="pic"><b>Profile Picture :</b></label><br>
+                        <input class="mb-3" type="file" id="pic" name="pic"><br>
+                    </div>
+                </form>
+                <img src="profile_web.png" alt="profile_pic" class="w-25 h-25 border border-1 m-4">
+            </div>
         </div>
   
-        <!-- Modal footer -->
+
         <div class="modal-footer">
           <button type="button" class="btn btn-light border border-1" data-bs-dismiss="modal">Save</button>
         </div>
