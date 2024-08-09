@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body style="font-family: 'Lato', sans-serif;background-color: lightgray;font-size: small;">
 
@@ -20,36 +21,40 @@
         </ul>
         <ul class="navbar-nav position-absolute end-0">
             <li><span class="material-icons text-light">person</span></li>
-            <li><a href="Signup.html" class="text-light mx-1 text-decoration-none">Sign Up</a></li>
+            <li><a type="button" class="signup text-light mx-1 text-decoration-none">Sign Up</a></li>
             <li><span class="material-icons text-light ms-3">logout</span></li>
-            <li><a href="Login.html" class="text-light mx-1 text-decoration-none">Logout</a></li>
+            <li><a type="button" class="logout text-light mx-1 text-decoration-none">Logout</a></li>
         </ul>
     </nav>
     <div class="d-flex">
         <div class="container-fluid w-25 h-75 m-0 bg-light text-center position-relative">
-            <img src="profile_web.png" alt="profile-pic">
+            <img class="user_profile w-50 h-50 border rounded-circle" src="profile_web.png" alt="profile-pic">
             <button type="button" class="border border-0 bg-light position-absolute top-0 end-0 mt-1 me-2" data-bs-toggle="modal" data-bs-target="#myModal">
                 <i class="fa-solid fa-pen-to-square"></i>
             </button>
-            <h3>Random Kumar Singh</h3>
-            <h6>Programmer</h6>
+            <h3><b class="user_name">Vineet Kumar Singh</b></h3>
+            <h6 class="user_designation">Programmer</h6>
             <hr>
             <div class="">
                 <div class="d-flex">
                     <span class="material-icons mx-3">location_on</span>
-                    <p class="">Masjid Banda, Hyderabad</p>
+                    <p class="user_address">Masjid Banda, Hyderabad</p>
                 </div>
                 <div class="d-flex">
                     <span class="material-icons mx-3">call</span>
-                    <p class="">9876543210</p>
+                    <p class="user_number">9876543210</p>
+                </div>
+                <div class="d-flex">
+                    <span class="fa-regular fa-envelope mx-3"></span>
+                    <p class="user_email"><a href="">vineet@beehyv.com</a></p>
                 </div>
                 <div class="d-flex">
                     <span class="fa-solid fa-link mx-3"></span>
-                    <p class=""><a href="#">random@beehyv.com</a></p>
+                    <p class="user_link"><a href="#">http://home.iitk.ac.in/~vineetks</a></p>
                 </div>
                 <div class="d-flex">
                     <span class="fa-solid fa-language mx-3"></span>
-                    <p class="">English</p>
+                    <p class="user_language">English</p>
                 </div>
                 <hr>
                 <i class="text-primary fa-brands fa-twitter mx-2 mb-3"></i>
@@ -128,15 +133,13 @@
         </div>
         <img src="BottomRightButton.png" alt="info" class="border border-0 rounded-circle position-fixed bottom-0 end-0">
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+ 
 
 
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
   
         
@@ -151,46 +154,54 @@
                 <form class="my-4 mx-2">
                     <div class="w-50">
                         <label class="form-label" for="Name"><b>Name :</b></label><br>
-                        <input class="form-control form-control-sm border border-dark" type="text" id="fname" name="fname" placeholder="First Name"><br>
-                        <label class="form-label" for="Designition"><b>Designition :</b></label><br>
-                        <input class="form-control form-control-sm border border-dark" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                        <input class="name form-control form-control-sm border border-dark" type="text" id="Name" name="Name" placeholder="First Name"><br>
+                        <label class="form-label" for="designation"><b>designation :</b></label><br>
+                        <input class="designation form-control form-control-sm border border-dark" type="text" id="designation" name="designation" placeholder="designation"><br>
                         <label class="form-label" for="Address"><b>Address :</b></label><br>
-                        <input class="form-control form-control-sm border border-dark" type="text" id="lname" name="lname" placeholder="Address"><br>
+                        <input class="address form-control form-control-sm border border-dark" type="text" id="Address" name="Address" placeholder="Address"><br>
                     </div>
                     <div class="d-flex">
                         <div class="me-1">
-                            <label class="form-label" for="contnum"><b>Contact N</b>umber :</label><br>
-                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="contnum" name="contnum" placeholder="Contact Number"><br>
+                            <label class="form-label" for="contnum"><b>Contact Number :</b></label><br>
+                            <input class="number form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="contnum" name="contnum" placeholder="Contact Number"><br>
                         </div>
                         <div class="">
                             <label class="form-label" for="email"><b>Email :</b></label><br>
-                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="email" id="email" name="email"><br>
+                            <input class="email form-control form-control-sm border rounded-1 border-dark h-25" type="email" id="email" name="email" placeholder="Email"><br>
                         </div>
                     </div>
                     <div class="d-flex">
                         <div class="me-1">
                             <label class="form-label" for="link"><b>Link :</b></label><br>
-                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="link" name="link" placeholder="Link"><br>
+                            <input class="link form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="link" name="link" placeholder="Link"><br>
                         </div>
                         <div class="">
-                            <label class="form-label" for="language"><b>Contact Number :</b></label><br>
-                            <input class="form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="language" name="language" placeholder="Language"><br>
+                            <label class="form-label" for="language"><b>Language :</b></label><br>
+                            <input class="language form-control form-control-sm border rounded-1 border-dark h-25" type="text" id="language" name="language" placeholder="Language"><br>
                         </div>
                     </div>
                     <div>
                         <label class="form-label" for="pic"><b>Profile Picture :</b></label><br>
-                        <input class="mb-3" type="file" id="pic" name="pic"><br>
+                        <input class="profile mb-3" type="file" id="pic" name="pic"><br>
                     </div>
                 </form>
-                <img src="profile_web.png" alt="profile_pic" class="w-25 h-25 border border-1 m-4">
+                <div class="w-50 h-50"><img src="profile_web.png" alt="profile_pic" class="h-100 w-75 border border-1 m-4"></div>
             </div>
         </div>
   
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-light border border-1" data-bs-dismiss="modal">Save</button>
+          <button type="button" class="modalsave btn btn-light border border-1" data-bs-dismiss="modal">Save</button>
         </div>
   
       </div>
     </div>
   </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+  <script src="mainprofile.js"></script>
+</body>
+</html>

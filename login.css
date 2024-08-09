@@ -61,7 +61,7 @@ img {
   margin-bottom: 10px;
 }
 
-.inp {
+.inpuser,.inppassword {
   height: 5.5vh;
   margin: 5px;
   width: 100%;
@@ -80,6 +80,7 @@ img {
   height: 5vh;
   background-color: rgb(15, 109, 233);
   color: white;
+  cursor: pointer;
 }
 
 .terms {
