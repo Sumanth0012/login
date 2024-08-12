@@ -51,9 +51,22 @@ const userlist = []
       "Developer",
       "Masjid Banda, Hydarabad",
       "9876543210",
-      "admin@beehyv.com",
+      "sumanth@beehyv.com",
       "https://moodle.beehyv.com/my/",
       "English",
+      "profile_web.png"
+    )
+  );
+  userlist.push(
+    new ouruser(
+      "abcde",
+      "abcde",
+      "Designer",
+      "Secundrabad, Hydarabad",
+      "9512368740",
+      "abcde@beehyv.com",
+      "abc.com",
+      "Hindi",
       "profile_web.png"
     )
   );
